@@ -1,0 +1,78 @@
+/COM  Datei: MAT.DAT
+
+/com
+/com  Materialdaten fuer Silizium und Luft
+/com
+/com  ********************************************
+/prep7
+/sho,x11,,1
+
+/com  ----------------------------------------------
+/COM  ----------- Materialwerte: Si<110> -----------
+/com  ----------------------------------------------
+SIEM=1.689e11      ! mittlerer E-Modul      [N/m2]
+SIPO=0.0625        ! mittlere Poissonzahl
+SIRO=2329          ! Materialdichte         [kg/m3]
+SILA=156           ! Waermeleitfaehigkeit   [W/mK]
+SIKA=703           ! spez. Waermekapazitaet [J/kgK]
+SIAL=2.62e-6       ! Therm. Ausdehn.koeff.  [1/K]
+/COM    Materialeigenschaften zuweisen
+MP,EX,1,SIEM
+MP,NUXY,1,SIPO
+MP,DENS,1,SIRO
+MP,ALPX,1,SIAL
+MP,KXX,1,SILA
+MP,C,1,SIKA
+
+/com  ----------------------------------------------
+/COM  ------------ Materialwerte: Luft -------------
+/com  ----------------------------------------------
+/com  Bezugstemperatur: 22 Grad Celsius (1 bar)
+LURO=1.2         ! Materialdichte         [kg/m3]
+LULA=0.026       ! Waermeleitfaehigkeit   [W/mK]
+LUKA=1007        ! spez. Waermekapazitaet [J/kgK]
+LUAL=3.419e-3    ! Therm. Ausdehn.koeff.  [1/K]
+LUDY=17.98e-6    ! dynamische Viskositaet [kg/ms]
+LUKI=15.13e-6    ! kinemat. Viskositaet   [m2/s]
+/COM    Materialeigenschaften zuweisen
+MP,EX,2,1
+MP,NUXY,2,.3
+MP,DENS,2,LURO
+MP,ALPX,2,LUAL
+MP,KXX,2,LULA
+MP,C,2,LUKA
+MP,VISC,2,LUKI
+
+/com -----------------------------------------------
+/com ------------- Materialwerte: Keramik ----------
+/com -----------------------------------------------
+KEEM=2.9e11         ! mittlerer E-Modul      [N/m2]
+KEPO=0.3            ! mittlere Poisson-Zahl
+KERO=3830           ! Materialdichte         [kg/m3]
+KELA=29.3           ! Waermeleitfaehigkeit   [W/mK]
+KEKA=774            ! spez. Waermekapazitaet [J/kgK]
+KEAL=3.5e-6         ! Therm. Ausdehn.koeff.  [1/K]
+/com        Materialeigenschaften zuweisen
+MP,EX,3,KEEM
+MP,NUXY,3,KEPO
+MP,DENS,3,KERO
+MP,ALPX,3,KEAL
+MP,KXX,3,KELA
+MP,c,3,KEKA
+
+/com  ----------------------------------------------
+/COM  ----------- Materialwerte: Al (Heizer) -------
+/com  ----------------------------------------------
+ALEM=0.7031e11     ! mittlerer E-Modul      [N/m2]
+ALPO=0.346         ! mittlere Poissonzahl
+ALRO=2700          ! Materialdichte         [kg/m3]
+ALLA=211           ! Waermeleitfaehigkeit   [W/mK]
+ALKA=896           ! spez. Waermekapazitaet [J/kgK]
+ALAL=23.2e-6       ! Therm. Ausdehn.koeff.  [1/K]
+/COM    Materialeigenschaften zuweisen
+MP,EX,4,ALEM
+MP,NUXY,4,ALPO
+MP,DENS,4,ALRO
+MP,ALPX,4,ALAL
+MP,KXX,4,ALLA
+

@@ -1,0 +1,25 @@
+/COM  Datei: BALK.K0
+
+/com  Statische Analyse
+/com  Silizium Einfachbalken
+/COM  Geometrie: BALK2.F18
+
+/com  Parameter
+xg=2*xges        ! freies Balkenende
+druk=-1e6      ! mechan. Verspannung in MPa
+
+/com  Last definieren
+xg=2*xges
+nsel,x,xg
+psf,all,,,-druk
+nall
+
+/COM  ANSYS-Analyseoptionen
+kan,0
+kay,6,1
+kay,8,1
+iter,-10,,10
+cnvr,,,,,1
+total,100
+
+/com  ********************************************
