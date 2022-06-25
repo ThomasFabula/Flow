@@ -1,0 +1,76 @@
+/FIDAP - CFD-Simulation
+
+*TITL
+Resonanter Stroemungssensor GMS / HSG-IMIT 
+
+*expa 
+*FIPREP
+scale(valu = 1., Velo = 1., temp = 1.) 
+prob(2-d,nonl,lami, weak = 0) 
+pres(penal = 1e-5, disc) 
+solu(s.s. = 30, velc = 1e-3, resc = 1e-3, accf = .4) 
+/solu(s.s. = 30, cgs, cr, prec = 21, accf = .4) 
+/solu(segr = 30) 
+/solu(segr = 30, cgs, cr, prec = 21)
+
+exec(newj)
+opti(upwi)
+upwi
+/U V W P S T K E
+.5 1. 0. 0. 0. 1. 0. 0.
+/rela
+/U V W P S T K E
+/.1 .2 0. .1 0. .1 0. 0.
+/icno(velo, stokes)
+/einlesen aus FDREST
+icno(velo,zero)
+/Temp-verteilung ueber dem Chip
+icno(temp, cons = 20)
+/icno(velo, read)
+/heatsource 6.7e8
+/source(heat, cons, grou = 4)
+/6.7e8
+/heatsource 3.3e8
+/source(heat, cons, grou = 5)
+/3.3e8
+
+/Luft      mate = 1
+visc(set = 1, cons = 15.e-6)
+dens(set = 1, cons = 1.2)
+spec(set = 1, cons = 1007.)
+cond(set = 1, cons = .026)
+
+/Silicium    mate = 2
+dens(set = 2, cons = 2329.)
+spec(set = 2, cons = 703.)
+cond(set = 2, cons = 156.)
+
+/Keramik=  mate = 3
+dens(set = 3, cons = 3240.)
+spec(set = 3, cons = 645.)
+cond(set = 3, cons = 20.)
+
+/Aluminium  mate = 4
+dens(set = 4, cons = 2700.)
+spec(set = 4, cons = 896.)
+cond(set = 4, cons = 211.)
+
+/Materialien
+mate(type = 1, mden = 1, mvisc = 1, mspht = 1, mcond = 1)
+mate(type = 2, mden = 2, mspht = 2, mcond = 2)
+mate(type = 3, mden = 3, mspht = 3, mcond = 3)
+mate(type = 4, mden = 4, mspht = 4, mcond = 4)
+renu
+
+NODES(ANSYS)
+ELEM(GROU = 2, SOLID, QUAD, NODES = 4, MATE = 2, ANSYS)
+ELEM(GROU = 1, FLUID, QUAD, NODES = 4, MATE = 1, ANSYS)
+ELEM(GROU = 3, SOLID, QUAD, NODES = 4, MATE = 3, ANSYS)
+ELEM(GROU = 4, SOLID, QUAD, NODES = 4, MATE = 4, ANSYS)
+ELEM(GROU = 5, SOLID, QUAD, NODES = 4, MATE = 4, ANSYS)
+ELEM(GROU = 6, PLOT, EDGE, NODES = 2, ANSYS)
+ELEM(GROU = 7, PLOT, EDGE, NODES = 2, ANSYS)
+ELEM(GROU = 8, PLOT, EDGE, NODES = 2, ANSYS)
+END
+
+*END
