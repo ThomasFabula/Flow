@@ -1,0 +1,50 @@
+= Sensors with electrothermal excitation
+ 
+
+== Abstract
+Silicon bars (thickness: approx. 50 μm, width: 1 mm) of different lengths (3 – 10 mm) were produced by anisotropic etching technology in thermally oxidized (100)-Si wafers and equipped with NiCr micro-heaters positioned at the bar ends. On the beam there are also four measuring resistors connected to form a full bridge. As a result of a pulse-like heating, the beam is excited to natural oscillations. The periodic expansion or compression of the measuring resistors results in a frequency-analogue bridge signal which is very well suited for detecting changes in resonance behaviour. The possibilities of this sensor principle for the detection of force, temperature and gas flow are shown by measurements. The realization of frequency-analog sensors has a cost advantage in that the measurement signal is quasi-digital, so that an A/D conversion is not necessary. The electrical layout, including the bondable and/or solderable external connections, was implemented using metal thin-film technology throughout. The layer systems NiCr / TiPdAu (solder version) and NiCr / TiAu / galvanic Au (bond version) were deposited by PVD and subjected to the usual photolithographic and wet-chemical process steps for structuring.
+
+ 
+
+== Procedure
+The process engineering work achieved an optimum combination of silicon etching technology with the manufacture of the electrical components of the sensors, which will ultimately lead to high yields and low costs. The high thermal stability of the metal layer system (up to 225 °C for non-electrode contacts) raises the prospect of high-temperature applications for such sensors.
+
+Extensive static and dynamic FEM calculations supported by experimental results under passive external excitation and electrothermal excitation showed that the resonance behavior of the sensors is not significantly affected by the directly applied strain gauge bridge.
+
+Further numerical flow simulations (CFD) also formed the starting point for initial optimizations of the sensor sensitivity and were used to interpret the experimental results.
+
+ 
+== Summary
+-Technology: metal thin film technology, characterization of the metal layer system, high temperature application
+- Functional principle: electrothermal excitation principle, resistive sensing (strain gauge), resonant sensing principle for physical measurands
+-Layout: layout optimization by FEM, i.e. basic resonance behavior, sensitive effects and signal optimization
+-Experimental characterization: temperature distribution, force, temperature and flow sensitivity
+-Finite element modeling: comparison simulations-measurements (passive, active excitation)
+-Application examples: Beam array for detection of structure-borne noise, membranes as flow sensors in high-temperature applications T > 150 °Celsius.
+ 
+
+== Conclusion of the results
+-Successful demonstration of the compatibility of the selected metal thin-film technology with Si etching technology as a prerequisite for cost-effective batch production
+-Due to the materials used, a high-temperature application (150 °C and above) is realistic
+-Electrothermal drive and resistive signal decoupling was successfully tested on sensor prototypes (beam thickness 50 um, length 4-10 mm) in the resonance range up to approx. 40 kHz
+-Optical and electrical measurements in comparison with FEM calculations for the detection of sensitive effects (temperature, flow) indicate the expected large influence of the packaging technology (PT).
+-A solution of the PT problems in connection with an application-specific sensor optimization leads to a highly sensitive elementary sensor with long-term stability.
+
+
+== Testimonial 
+“On the initiative of Dr. Fabula, the company GMS decided to continue the work in a joint project towards a marketable product. The results are reflected in the customer-specific development currently underway at our company.” ~ Dipl.-Ing. Hans Weiss, Owner and Managing Director GMS mbH
+
+
+== Annotation
+The work presented here was carried out as part of a joint project funded by the BMFT (now: BMBF) entitled “Use of micromechanics for the manufacture of frequency-analog sensors”.
+
+ 
+== Abbreviations
+- NiCr = Nickel-Chromium
+- TiPdAu = Titanium-Palladium-Gold
+- TiAu = Titanium Gold
+- galv. Au = electroplated Gold
+ 
+
+== Internet-URL
+https://tfconsult.com/sensoren-mit-elektrothermischer-anregung/
