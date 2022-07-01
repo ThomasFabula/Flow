@@ -1,0 +1,72 @@
+Resonant silicon sensors with electrothermal excitation and strain gauges in metal thin-film technology
+ 
+
+Final presentation “The use of micromechanics for the fabrication of frequency-analog sensors” 
+
+Dr. Herbert Bartuch, GMS – Gesellschaft für Mikrotechnik und Sensorik mbH, Industriestraße 7, St. Georgen
+
+ 
+
+Summary
+
+Silicon bars (thickness: about 50 μm, width: 1 mm) of different lengths (3 – 10 mm) were fabricated by 
+anisotropic etching techniques in thermally oxidized (100)-Si wafers and provided with NiCr microheaters
+ placed at the bar ends. Furthermore, four measuring resistors connected to form a full bridge are located
+ on the beam. As a result of pulse-like heating, the beam is excited to vibrate. The periodic stretching or
+ compression of the measuring resistors leads to a frequency-analog bridge signal which is very well suited 
+for detecting changes in the resonant behavior. The possibilities of this sensor principle for the detection 
+of force, temperature and gas flows are illustrated by means of measurements. In the realization of 
+frequency-analog sensors, a cost advantage results from the fact that the measurement signal is 
+quasi-digital, so that A/D conversion is not required.
+
+The electrical layout, including the bondable and/or solderable external connections, was implemented throughout 
+using metal thin-film technology. The layer systems NiCr / TiPdAu (solder variant) and NiCr / TiPdAu / galv. Au 
+(bond variant) were deposited using PVD processes and subjected to the usual photolithographic and wet chemical
+ process steps for patterning. Through the process engineering work, an optimal combination of the silicon 
+etching technology with the fabrication of the electrical components of the sensors was achieved, which will 
+ultimately lead to high yield and low manufacturing costs. The high thermal stability of the metal layer
+system (up to 225 ºC for non-electrode contacts) raises the possibility of high-temperature applications 
+for such sensors.
+
+Extensive static and dynamic FEA calculations, supported by experimental results for external excitation 
+and electrothermal excitation, showed that the resonance behavior of the sensors is not significantly 
+affected by the directly applied strain gauge bridge. Further numerical calculations (including CFD flow 
+simulation) also formed the starting point for initial optimization of the sensor sensitivity and were 
+used to interpret the experimental results.
+
+ 
+
+Testimonial
+
+“Among other assignments, Dr. Fabula was responsible for optimizing the design of pressure transducers 
+with metal film strain gauges by means of FE calculations. The results achieved stood the industrial 
+test and contributed to the stabilization and further development of this production line in the GMS Company.
+
+Dr. Fabula also demonstrated his technical competence, combined with circumspect work organization and his 
+high level of commitment in other projects. His work on the modeling and application-specific optimization 
+of micromechanical force and flow sensors using the FE method had a decisive influence on the design and 
+layout of prototypes of a micromechanical force sensor with electrothermal excitation, which were 
+then subsequently manufactured at GMS.
+
+On the initiative of Dr. Fabula, GMS decided to continue the work in a joint project towards a commercially 
+viable product. The results are reflected in the customer-specific development currently underway at our company.
+
+Dr. Fabula always proved to be very open to the specific development tasks of our company. We would like 
+to thank him for his services so far and look forward to further good cooperation.” ~ Dipl.-Ing. Hans Weiss, 
+Owner & Managing Director, GMS – Gesellschaft für Mikrotechnik und Sensorik mbH
+
+ 
+
+Knowledge transfer services
+
+Application of thin-film strain gauge on metal carrier with insulating interlayer, with the following features:
+- max. process temperature 320ºC
+- excellent long-term and creep properties
+- integrable temperature compensation
+- electrical dielectric strength > 500 VAC
+- Layout development and isotropic / anisotropic etching of simple micromechanical elements in
+  silicon (bridge, tongues, bars, membranes)
+- Application of electrical thin film arrays on micromechanical elements for signal acquisition
+  (microheaters, strain gauges, temperature sensors) and assembly and interconnection technology 
+  (solderable and bondable contact system) for e.g. frequency-analog sensors, pressure sensors, fast temperature sensors etc.
+ 
