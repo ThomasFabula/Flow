@@ -1,0 +1,63 @@
+Resonante Silizium-Sensoren mit elektrothermischer Anregung und DMS in Metalldünnfilmtechnologie
+
+
+H. Bartuch*, S. Büttgenbach**, Th. Fabula+, H. Weiss*
+
+*  Gesellschaft für Mikrotechnik und Sensorik mbH, Industriestraße 7, 7742 St. Georgen
+** Institut für Mikrotechnik der Technischen Universität Braunschweig, Langer Kamp 8, D-3300 Braunschweig
++  Institut für Mikro- und Informationstechnik der Hahn-Schickard-Gesellschaft für angewandte 
+   Forschung e. V., Wilhelm-Schickard-Straße 10, D-7730 Villingen-Schwenningen
+
+
+Abstract
+
+Es wurden Silizium-Balken (Dicke: ca. 50 μm, Breite: 1 mm) unterschiedlicher Länge (3 - 10 mm) 
+mittels anisotroper Ätztechnik in thermisch oxidierten (100)-Si-Wafern hergestellt und mit an den 
+Balkenenden positionierten NiCr-Mikroheizern versehen. Auf dem Balken befinden sich weiterhin vier 
+zu einer Vollbrücke verschaltete Meßwiderstände. Infolge einer impulsartigen Beheizung wird der Balken 
+zu Eigenschwingungen angeregt. Die periodische Dehnung bzw. Stauchung der Meßwiderstände führt zu 
+einem frequenzanalogen Brückensignal, das sehr gut geeignet ist, um Veränderungen im Resonanzverhalten 
+nachzuweisen. Die Möglichkeiten dieses Sensorprinzips zum Nachweis von Kraft, Temperatur und Gasströmung 
+werden anhand von Messungen dargestellt. Bei der Realisierung von frequenzanalogen Sensoren ergibt 
+sich ein Kostenvorteil dadurch, daß das Meßsignal quasidigital vorliegt, sodaß eine A/D-Wandlung entfällt.
+
+Die Umsetzung des elektrischen Layouts einschließlich der bond- und/oder lötbaren Außenanschlüsse 
+erfolgte durchgängig in Metalldünnfilmtechnologie. Die Schichtsysteme NiCr/TiPdAu (Lötvariante) bzw. 
+NiCr/TiAu/galv.Au (Bondvariante) wurden mittels PVD-Verfahren abgeschieden und zur Strukturierung 
+den üblichen photolithographischen und naßchemischen Prozeßschritten unterzogen. Durch die 
+verfahrenstechnischen Arbeiten wurde eine optimale Verbindung der Silizium-Ätztechnologie mit 
+der Herstellung der elektrischen Komponenten der Sensoren erreicht, was letztendlich zu hoher 
+Ausbeute und niedrigen Kosten führen wird. Die hohe thermische Stabilität des Metallschichtsystems 
+(bei unbeloteten Kontakten bis 225°C) stellt einen Hochtemperatureinsatz solcher Sensoren in Aussicht. 
+
+Durch umfangreiche statische und dynamische FEM-Berechnungen konnte gestützt durch experimentelle 
+Ergebnisse bei Fremdanregung und elektrothermischer Anregung gezeigt werden, daß das Resonanzverhalten 
+der Sensoren durch die direkt applizierte DMS-Brücke nicht signifikant beeinflußt wird. Weitere 
+numerische Berechnungen (u.a. Strömungssimulation) bildeten darüberhinaus den Ausgangspunkt für 
+erste Optimierungen der Sensorempfindlichkeit und wurden zur Interpretation der experimentellen 
+Ergebnisse herangezogen. 
+
+Die vorgestellten Arbeiten wurden im Rahmen eines vom BMFT geförderten Verbundvorhabens 
+"Einsatz der Mikromechanik zur Herstellung frequenzanaloger Sensoren" durchgeführt.
+
+
+
+Technologie:
+Metalldünnfilmtechnologie, Charakterisierung des Metallschichtsystems, Hochtemperatureinsatz
+
+Funktionsprinzip und Layout:
+elektrothermisches Anregungsprinzip, resistive Abtastung (DMS),
+resonante Sensorprinzipien für physikalische Meßgrößen, 
+Layoutoptimierung durch FEM: grundsätzliches Resonanzverhalten, sensitive Effekte, Signaloptimierung 
+altes Layout: Beispiel für Strömungssensor
+neues Layout: Beispiel für Kraftsensor
+
+Experimentelle Charakterisierung:
+Temperaturverteilung, Kraft-, Temperatur-, Strömungsempfindlichkeit, 
+Vergleich: Finite-Elemente Simulationen - Messungen (passive, aktive Anregung)
+
+Anwendungsbeispiele:
+Balken-Array: Detektion von Körperschall
+Membranen: Strömungssensoren
+Hochtemperatureinsatz T > 120° C
+
