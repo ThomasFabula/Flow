@@ -1,0 +1,128 @@
+Datei: KRAFTMOD.TXT
+===================
+Resonanzfrequenzen in Abhaengigkeit einer Kraftbeaufschlagung
+Modell: BALK2.F18       - Silizium-Balkenresonator
+        BALK.K0         - statische Analyse
+        /FREQ,100,,5,,1 - Modalanalyse
+
+F = 0 N, unverspannter Resonator:
+--------------------------------
+LOAD STEP =     1    ITERATION =     1    FREQ =   4349.18  Z1
+LOAD STEP =     1    ITERATION =     2    FREQ =   12010.1  Z2
+LOAD STEP =     1    ITERATION =     3    FREQ =   23609.2  Z3
+LOAD STEP =     1    ITERATION =     4    FREQ =   30437.8  T1
+LOAD STEP =     1    ITERATION =     5    FREQ =   39173.4  Z4
+
+
+Druckspannungen:
+================
+
+F = -0,1 N / Sigma = -2 MPa:
+----------------------------
+keine Statik-Loesung gerechnet
+
+F = -0,09 N / Sigma = -1,8 MPa:
+-------------------------------
+UX = -0.888 um / UZ = 35,4 um / SX = SIG1 = -41.3 MPa
+Balken knickt aus (BALK-KNICK.F12)
+LOAD STEP =     1    ITERATION =     1    FREQ =   468.650  Z1
+LOAD STEP =     1    ITERATION =     2    FREQ =   8698.94  Z2
+LOAD STEP =     1    ITERATION =     3    FREQ =   20261.2  Z3
+LOAD STEP =     1    ITERATION =     4    FREQ =   30320.4  T1
+LOAD STEP =     1    ITERATION =     5    FREQ =   35779.1  Z4
+
+F = -0,08 N / Sigma = -1,6 MPa:
+-------------------------------
+UX = -0,778 um / UZ = 2,87 um / SX = SIG1 = -13,9 MPa
+LOAD STEP =     1    ITERATION =     1    FREQ =   1534.46  Z1
+LOAD STEP =     1    ITERATION =     2    FREQ =   9125.54  Z2
+LOAD STEP =     1    ITERATION =     3    FREQ =   20668.9  Z3
+LOAD STEP =     1    ITERATION =     4    FREQ =   30220.0  T1
+LOAD STEP =     1    ITERATION =     5    FREQ =   36170.7  Z4
+
+F = -0,07 N / Sigma = -1,4 MPa:
+-------------------------------
+UX = -0,681 um / UZ = 1,36 um / SX = SIG1 = -11,3 MPa
+LOAD STEP =     1    ITERATION =     1    FREQ =   2116.52  Z1
+LOAD STEP =     1    ITERATION =     2    FREQ =   9537.11  Z2
+LOAD STEP =     1    ITERATION =     3    FREQ =   21059.1  Z3
+LOAD STEP =     1    ITERATION =     4    FREQ =   30245.5  T1
+LOAD STEP =     1    ITERATION =     5    FREQ =   36559.6  Z4
+
+F = -0,05 N / Sigma = -1 MPa:
+-----------------------------
+UX = -0,486 um / UZ = 0,525 um / SX = SIG1 = -7,69 MPa
+LOAD STEP =     1    ITERATION =     1    FREQ =   2945.58  Z1
+LOAD STEP =     1    ITERATION =     2    FREQ =   10308.4  Z2
+LOAD STEP =     1    ITERATION =     3    FREQ =   21818.5  Z3
+LOAD STEP =     1    ITERATION =     4    FREQ =   30300.0  T1
+LOAD STEP =     1    ITERATION =     5    FREQ =   37325.3  Z4
+
+
+Zugspannungen:
+==============
+
+F = 0,05 N / Sigma = 1 MPa:
+---------------------------
+UX = 0,486 um / SX = SIG1 = 7,56 MPa
+LOAD STEP =     1    ITERATION =     1    FREQ =   5374.20  Z1
+LOAD STEP =     1    ITERATION =     2    FREQ =   13485.7  Z2
+LOAD STEP =     1    ITERATION =     3    FREQ =   25270.5  Z3
+LOAD STEP =     1    ITERATION =     4    FREQ =   30576.4  T1
+LOAD STEP =     1    ITERATION =     5    FREQ =   40937.2  Z4
+
+F = 0,1 N / Sigma = 2 MPa:
+--------------------------
+UX = 0,972 um / UZ = -0.311 um / SX = SIG1 = 15,2 MPa
+LOAD STEP =     1    ITERATION =     1    FREQ =   6216.91  Z1
+LOAD STEP =     1    ITERATION =     2    FREQ =   14804.8  Z2
+LOAD STEP =     1    ITERATION =     3    FREQ =   26826.0  Z3
+LOAD STEP =     1    ITERATION =     4    FREQ =   30713.9  T1
+LOAD STEP =     1    ITERATION =     5    FREQ =   42626.8  Z4
+
+F = 0,2 N / Sigma = 4 MPa:
+--------------------------
+UX = 1,94 um / SX = SIG1 = 30,4 MPa
+LOAD STEP =     1    ITERATION =     1    FREQ =   7600.19  Z1
+LOAD STEP =     1    ITERATION =     2    FREQ =   17119.3  Z2
+LOAD STEP =     1    ITERATION =     3    FREQ =   29684.2  Z3
+LOAD STEP =     1    ITERATION =     4    FREQ =   30987.2  T1
+LOAD STEP =     1    ITERATION =     5    FREQ =   45815.3  Z4
+
+
+F = 0,3 N / Sigma = 6 MPa:
+--------------------------
+UX = 2,91 um / SX = SIG1 = 45,6 MPa
+LOAD STEP =     1    ITERATION =     1    FREQ =   8745.35  Z1
+LOAD STEP =     1    ITERATION =     2    FREQ =   19135.3  Z2
+LOAD STEP =     1    ITERATION =     3    FREQ =   31257.9  T1
+LOAD STEP =     1    ITERATION =     4    FREQ =   32279.2  Z3
+LOAD STEP =     1    ITERATION =     5    FREQ =   48790.3  Z4
+
+
+F = 0,5 N / Sigma = 10 MPa:
+---------------------------
+UX = 4,86 um / UZ = -0.803 um / SX = SIG1 = 76,0 MPa
+LOAD STEP =     1    ITERATION =     1    FREQ =   10637.7  Z1
+LOAD STEP =     1    ITERATION =     2    FREQ =   22595.5  Z2
+LOAD STEP =     1    ITERATION =     3    FREQ =   31792.2  T1
+LOAD STEP =     1    ITERATION =     4    FREQ =   36899.5  Z3
+LOAD STEP =     1    ITERATION =     5    FREQ =   54237.6  Z4
+
+F = 0,75 N / Sigma = 15 MPa:
+----------------------------
+UX = 7,29 um / UZ = -1.01 um / SX = SIG1 = 114 MPa
+LOAD STEP =     1    ITERATION =     1    FREQ =   12574.6  Z1
+LOAD STEP =     1    ITERATION =     2    FREQ =   26242.8  Z2
+LOAD STEP =     1    ITERATION =     3    FREQ =   32447.1  T1
+LOAD STEP =     1    ITERATION =     4    FREQ =   41929.1  Z3
+LOAD STEP =     1    ITERATION =     5    FREQ =   60334.8  Z4
+
+F = 1,0 N / Sigma = 20 MPa:
+---------------------------
+UX = 9,72 um / UZ = -1.2 um / SX = SIG1 = 152 MPa
+LOAD STEP =     1    ITERATION =     1    FREQ =   14228.6  Z1
+LOAD STEP =     1    ITERATION =     2    FREQ =   29410.1  Z2
+LOAD STEP =     1    ITERATION =     3    FREQ =   33088.5  T1
+LOAD STEP =     1    ITERATION =     4    FREQ =   46387.7  Z3
+LOAD STEP =     1    ITERATION =     5    FREQ =   65848.2  Z4
