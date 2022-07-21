@@ -1,0 +1,44 @@
+ANSYS Users' Meeting 1993, 
+Bamberg: Vortragsabstract
+
+
+Titel: Gekoppelte Feldberechnung eines mikromechanischen Strömungssensors
+
+Autoren: Thomas Fabula, Nicolaus Hey, Stephan Messner
+
+Institut für Mikro- und Informationstechnik der 
+Hahn-Schickard-Gesellschaft für angewandte Forschung e.V.,
+D-78052 Villingen-Schwenningen, 
+Wilhelm-Schickard-Straße 10
+
+
+
+Abstract
+
+Im Rahmen eines vom BMFT geförderten Verbundprojektes wurden resonante mikromechanische 
+Silizium-Balkenstrukturen mit elektrothermischer Anregung und resistiver Abtastung durch 
+NiCr-Dehnmeßstreifen für die Anwendung als Kraft- und Strömungssensoren hergestellt [Bar93]. 
+
+Mit Finite-Elemente-Berechnungsmethoden sollten die Sensoreigenschaften, insbesondere die 
+thermische Fluid-Struktur-Wechselwirkung und das dynamische Verhalten untersucht, sowie 
+die Sensitivität gegenüber Strömungen optimiert werden [Mes93]. 	
+	
+Mit ANSYS erfolgte die Modellaufbereitung, die statischen und dynamischen Strukturberechnungen, 
+in denen die Eigenfrequenzen und -schwingungsformen bei unterschiedlichen Temperaturbelastungen 
+ermittelt wurden. Die Berechnung der Abkühlung des Sensors durch das vorbeiströmende Fluid wurde 
+mit FIDAP durchgeführt. Vergleichsrechnungen mit FLOTRAN wurden freundlicherweise von Herrn 
+Dr. Göhner, (CADFEM GmbH, Leonberg) zur Verfügung gestellt. Die Ergebnisse der Strömungsberechnungen 
+von FIDAP und FLOTRAN werden verglichen und diskutiert. 
+
+Durch optische Messungen konnten die thermischen bedingten statischen Auslenkungen, das 
+temperaturabhängige Frequenzverhalten und die Strömungsempfindlichkeit ermittelt und zur 
+Modellbildung herangezogen werden. Hierbei konnten die FE-Modellannahmen und die Einflüsse 
+der Randbedingungen bei den Berechnungen durch Vergleich mit den experimentellen Daten e
+rmittelt werden. 
+
+
+[Bar93] : H. Bartuch, S. Büttgenbach, Th. Fabula, H. Weiss, Resonante Silizium-Sensoren mit elektrothermischer Anregung und DMS in Metalldünnfilmtechnologie, SENSOR 93, Nürnberg, 12.-14. Oktober 1993
+
+[Mes93] : S. Messner, Finite-Elemente Berechnung der Fluid-Struktur-Wechselwirkung bei einem mikromechanischen Strömungssensor, Diplomarbeit, Universität Stuttgart/HSG-IMIT, VS-Villingen (1993)
+
+
