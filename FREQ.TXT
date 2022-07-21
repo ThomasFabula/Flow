@@ -1,0 +1,106 @@
+ Ergebnisdatei: 
+                                                         
+ Sensortemperatur/Eigenfrequenzen.   
+                                    
+ Temperaturüberhöhung (K) 0.                                             
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  4223.0            21         1         1
+     2  11727.            21         2         2
+
+ Temperaturüberhöhung (K) 10.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  3470.8            21         1         1
+
+ Temperaturüberhöhung (K) 15.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  2986.1            21         1         1
+     2  10202.            21         2         2
+
+ Temperaturüberhöhung (K) 20.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  2370.6            21         1         1
+     2  9586.4            21         2         2
+
+ Temperaturüberhöhung (K) 21.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  2223.1            21         1         1
+     2  9455.2            21         2         2
+
+ Temperaturüberhöhung (K) 22.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  2063.1            21         1         1
+     2  9320.9            21         2         2
+
+ Temperaturüberhöhung (K) 23.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  1888.0            21         1         1
+     2  9183.6            21         2         2
+
+ Temperaturüberhöhung (K) 24.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  1693.6            21         1         1
+     2  9043.2            21         2         2
+
+ Temperaturüberhöhung (K) 25.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  1473.5            21         1         1
+     2  8899.9            21         2         2
+
+ Temperaturüberhöhung (K) 26.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  1182.3            21         1         1
+     2  Temperaturüberhöhung 21         2         2
+
+ TemperaturÏberhÎhung (K) 27.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  925.07            21         1         1
+     2  8582.3            21         2         2
+
+ Temperaturüberhöhung (K) 29.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  1651.6            21         1         1
+     2  8475.7            21         2         2
+
+ Temperaturüberhöhung (K) 31.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  2434.8            21         1         1
+     2  8458.5            21         2         2
+
+ Temperaturüberhöhung (K) 33.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  3050.0            21         1         1
+     2  8450.4            21         2         2
+
+ Temperaturüberhöhung (K) 35.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  3576.2            21         1         1
+     2  8447.5            21         2         2
+
+ Temperaturüberhöhung (K) 40.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  4648.0            21         1         1
+     2  8438.2            21         2         2
+
+ Temperaturüberhöhung (K) 45.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  5530.2            21         1         1
+     2  8433.0            21         2         2
+
+ Temperaturüberhöhung (K) 5.0.                                           
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  3875.2            21         1         1
+     2  11265.            21         2         2
+ 
+ Temperaturüberhöhung (K) 50.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  6296.0            21         1         1
+     2  8433.0            21         2         2
+ Temperaturüberhöhung (K) 55.0.                                          
+   SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  6884.5            21         1         1
+     2  8426.8            21         2         2
+
+ Temperaturüberhöhung (K) 60.0.
+     SET   TIME/FREQ    LOAD STEP   SUBSTEP  CUMULATIVE
+     1  7414.9            21         1         1
+     2  8423.1            21         2         2
