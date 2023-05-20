@@ -1,7 +1,7 @@
 /com Datei: fluid3.bc
 
 /com ------------- Rand- und Anfangsbedingungen definieren
-     /com ------------- Einspannung des Sensors
+/com ------------- Einspannung des Sensors
 esel,mat,1              !Alle Elemente mit Material 1
 nelem                   !Knoten aller selektierten Elemente
 lssel,line,83
@@ -27,7 +27,7 @@ lsall
 nall
 eall
 
-    /com ------------- Einspannung der Keramikplatte
+/com ------------- Einspannung der Keramikplatte
 esel,mat,3             !Alle Elemente mit Material 3
 nelem                  !Knoten aller selektierten Elemente
 lssel,line,56
@@ -55,7 +55,7 @@ lsall
 nall
 eall
 
-    /com ------------- Randbedingungen an der Rohrwand
+/com ------------- Randbedingungen an der Rohrwand
 nsel,y,0
 nasel,y,y11
 d,all,ux
@@ -63,14 +63,14 @@ d,all,uy
 nt,all,temp,20.
 nall
 
-    /com ------------- Randbedingungen im Einstroembereich
+/com ------------- Randbedingungen im Einstroembereich
 nsel,x,x21
 d,all,ux,1
 d,all,uy
 nt,all,temp,20.
 nall
 
-    /com ------------- Randbedingung an der Keramikplatte
+/com ------------- Randbedingung an der Keramikplatte
 !x50=12.25e-3
 !x51=x50+3e-3
 !nsel,x,x50,x51
@@ -89,5 +89,3 @@ nall
 save
 
 /com **********************************************************
-
-
