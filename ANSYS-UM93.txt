@@ -51,26 +51,32 @@ Der Sensor ist in der Mitte des Srömungsrohres auf dem Keramikträger befestigt
 
 Mit diesem Modell wurde der Einfluß der Wärmequellen und -senken auf die Temperaturverteilung über dem Sensor ohne Strömungseinfluß untersucht. In Bild 6 ist die berechnete Temperaturverteilung an der Sensoroberfläche dargestellt. Diese Berechnung wurde unter Berücksichtigung folgender Annahmen durchgeführt:
 
-	● Wärmequelle in der Mitte des Resonators:		5109 W/m²,
-	● Wärmequellen am Rand des Resonators:		3109 W/m²
+	● Wärmequelle in der Mitte des Resonators:		5*109 W/m²
+	● Wärmequellen am Rand des Resonators:			3*109 W/m²
 	● Wärmesenken an der Unterseite des Keramikträgers:	T = 20°C
 
 
 
-Um einen Anhaltspunkt über die tatsächliche Temperaturverteilung an der Sensoroberfläche zu erhalten, wurden Thermographiemessungen (IR-Aufnahmen) am Sensor durchgeführt [Mes93]. In der Simulation wurde versucht diese Temperaturverteilung nachzubilden. Die maximale Temperatur in Balkenmitte beträgt etwa 100°C, der Temperaturunterschied zu den Sensorrändern ungefähr 26°C.
+Um einen Anhaltspunkt über die tatsächliche Temperaturverteilung an der Sensoroberfläche zu erhalten, wurden Thermographiemessungen (IR-Aufnahmen) am Sensor durchgeführt [Mes93]. In der Simulation wurde versucht diese Temperaturverteilung nachzubilden. Die maximale Temperatur in Balkenmitte beträgt etwa 100°C, der Temperaturunterschied 
+zu den Sensorrändern ungefähr 26°C.
 
 Mit diesem Modell und den oben beschriebenen thermischen Randbedingungen wurde die Temperaturverteilung in Abhängigkeit der Strömungsgeschwindigkeit berechnet. Dazu wurde zuerst die reine Geschwindigkeitsverteilung (T = const.) berechnet, bei der die elementspezifische Reynoldszahl auf eins gesetzt wurde (icnode(velo,stokes)), um eine gut konvergierende Lösung zu erhalten. In Bild 7a ist die Geschwindigkeitsverteilung für eine Anfangsgeschwindigkeit am Rohreintritt von v0 = 0,6 m/s dargestellt. Diese Geschwindigkeitsverteilung wurde als Anfangsbedingung bei der gekoppelten Geschwindigkeits-Temperaturfeld-Berechnung vorgegeben. In Bild 7b ist die zugehörige Temperaturverteilung dargestellt.
 
-Bei allen Berechnungen mit FIDAP wurde der direkte "successive substitution" Gleichungslöser eingesetzt. Der Druck-Freiheitsgrad wurde mit der "penalty-Funktion" eliminiert, was zu einem Modell mit 24177 Freiheitsgraden führte. Die Rechenzeiten auf einer HP730 betrugen zwischen 15 min für die Berechnung der Temperaturverteilung ohne Strömung und 1h für die Berechnung des Geschwindigkeitsfeldes bei einer Anfangsgeschwindigkeit von v0 = 2 m/s am Rohreintritt.
+Bei allen Berechnungen mit FIDAP wurde der direkte "successive substitution" Gleichungslöser eingesetzt. Der Druck-Freiheitsgrad wurde mit der "penalty-Funktion" eliminiert, was zu einem Modell mit 24177 Freiheitsgraden führte. Die Rechenzeiten auf einer HP730 betrugen zwischen 15 min für die Berechnung der Temperaturverteilung ohne Strömung und 
+1h für die Berechnung des Geschwindigkeitsfeldes bei einer Anfangsgeschwindigkeit von v0 = 2 m/s am Rohreintritt.
 
 
 Gekoppelte Feldberechnung
 
 Die Abhängigkeit der Resonanzfrequenz von der Strömungsgeschwindigkeit des Gases (Sensorkennlinie) erhält man über die Kopplung des strömungsmechanischen mit dem strukturmechanischen Modell, indem mit der Temperaturverteilung, die sich infolge der Strömung einstellt, die Verspannungen im Sensor und die Resonanzfrequenzen berechnet werden. Da es im Moment kein kommerzielles Programm gibt, mit dem diese gekoppelte Berechnung direkt durchgeführt werden kann, wurden die Programmpakete ANSYS und FIDAP über die implementierten Schnittstellen (Bild 8) verbunden.
 
-Die Modellgenerierung erfolgt in ANSYS44A. Über die Schnittstelle ANSFID werden die Geometriedaten und Randbedingungen, wie z.B. die Anfangsgeschwindigkeit v0(x=0) am Rohreintritt, an FIDAP übergeben. Dazu wird das FILE28 benötigt, in das die Modelldaten von ANSYS abgelegt werden (cdwrite). Das Programm ANSFID erzeugt anschließend die Datei FIMESH, in der die Modelldaten für FIDAP enthalten sind. Die Strömungssimulation in FIDAP ist in oben beschriebener Weise aufgespalten. In FIDAP gibt es die Möglichkeit einzelne Freiheitsgrade in eine von ANSYS lesbare Datei zu schreiben (neutral(ANSYS,...). Auf diese Art werden die Knotentemperaturen, die in FIDAP berechnet wurden, an ANSYS übergeben. Mit dieser Temperaturverteilung erfolgt in ANSYS50 zunächst eine statische Analyse, bei der die mechanischen Spannungen im Modell berechnet werden, um anschließend mit der verspannten Struktur eine Modalanalyse durchzuführen. Da die zur Verfügung stehende Version 6.04 von FIDAP nur ANSYS44A unterstützt, mußten die Dateien, in denen die Knotentemperaturen enthalten sind, mit dem UNIX-Hilfsprogramm 'awk' konvertiert werden ('nt' muß durch 'bf' ersetzt werden).
+Die Modellgenerierung erfolgt in ANSYS44A. Über die Schnittstelle ANSFID werden die Geometriedaten und Randbedingungen, wie z.B. die Anfangsgeschwindigkeit v0(x=0) am Rohreintritt, an FIDAP übergeben. Dazu wird das FILE28 benötigt, in das die Modelldaten von ANSYS abgelegt werden (cdwrite). Das Programm ANSFID erzeugt anschließend die Datei FIMESH, in der die Modelldaten für FIDAP enthalten sind. Die Strömungssimulation in FIDAP ist in oben beschriebener Weise aufgespalten. In FIDAP gibt es die Möglichkeit einzelne Freiheitsgrade in eine von ANSYS lesbare Datei zu schreiben (neutral(ANSYS,...). Auf diese Art werden die Knotentemperaturen, die in FIDAP berechnet wurden, an ANSYS übergeben. Mit dieser Temperaturverteilung erfolgt in ANSYS50 zunächst eine statische Analyse, bei der die mechanischen Spannungen im Modell berechnet werden, um anschließend mit der verspannten Struktur eine Modalanalyse durchzuführen. Da die zur Verfügung stehende Version 6.04 von FIDAP nur ANSYS44A unterstützt, mußten die Dateien, in denen die Knotentemperaturen enthalten sind, mit dem UNIX-Hilfsprogramm 
+'awk' konvertiert werden ('nt' muß durch 'bf' ersetzt werden).
 
-Um den Einfluß verschiedener Modellparameter auf die Sensorkennlinie zu untersuchen, wurden verschiedene Modelle berechnet. In Bild 9 ist die Sensorkennlinie für zwei verschiedene Modelle dargestellt. Die beiden Modelle unterscheiden sich durch unterschiedliche Wärmequellen und -senken. Es wurde jedoch darauf geachtet, daß bei beiden Modellen die Temperaturverteilung ohne Strömung näherungsweise mit den gemessenen Werten identisch ist.
+Um den Einfluß verschiedener Modellparameter auf die Sensorkennlinie zu untersuchen, wurden verschiedene Modelle berechnet. 
+In Bild 9 ist die Sensorkennlinie für zwei verschiedene Modelle dargestellt. Die beiden Modelle unterscheiden sich durch
+unterschiedliche Wärmequellen und -senken. Es wurde jedoch darauf geachtet, daß bei beiden Modellen die Temperaturverteilung 
+ohne Strömung näherungsweise mit den gemessenen Werten identisch ist.
 
 
 
