@@ -2,7 +2,7 @@
 
 /com Silizium-Einfachbalken auf einer Keramik-Grundplatte
 /com thermisch angeregter Kraftsensor
-/com Berechnung der Abkuehlung durch ein Fluid
+/com Berechnung der AbkÂuehlung durch ein Fluid
 /com Materialwerte in einem seperaten File: STRSEN.MAT
 
 /title, Stroemungssensor auf einer Keramikgrundplatte in einem Rohr
