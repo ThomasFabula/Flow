@@ -1,4 +1,4 @@
-! Temperaturabhängigkeit der Resonanzfrequenz beim resonanten Strömungssensor
+! TemperaturabhÃ¤ngigkeit der Resonanzfrequenz beim resonanten StrÃ¶mungssensor
 ! Materialeigenschaften und Geometrieparameter (SI-Einheiten)
 
 E_si     := 1.689*10^11;
